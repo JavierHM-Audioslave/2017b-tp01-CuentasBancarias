@@ -24,9 +24,14 @@ public class CuentaBancaria {
 		return false;
 	}
 	
-	public void transferirMontoHacia(Integer monto, CuentaBancaria c2)
-	{
-		saldo -= monto;
-		c2.depositar(monto);		
+	public boolean transferirMontoHacia(Integer monto, CuentaBancaria c2)
+	{		
+		if(saldo>=monto)
+		{
+			saldo -= monto;
+			c2.depositar(monto);
+			return true;
+		}
+		return false;
 	}
 }

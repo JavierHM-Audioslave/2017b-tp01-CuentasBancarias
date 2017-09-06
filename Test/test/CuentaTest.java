@@ -51,8 +51,8 @@ public class CuentaTest {
 	public void testTransferir$100AOtraCuentaDesdeUnaCuentaVacia()
 	{
 		CuentaBancaria c1 = new CuentaBancaria();
-		CuentaBancaria c2 = new CuentaBancaria();
-		c1.transferirMontoHacia(100, c2);
+		CuentaBancaria c2 = new CuentaBancaria();		
+		Assert.assertFalse(c1.transferirMontoHacia(100, c2));
 		Assert.assertEquals(0, (int)c2.getSaldo());
 	}
 
