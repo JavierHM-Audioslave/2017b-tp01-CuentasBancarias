@@ -11,8 +11,8 @@ public class CuentaTest {
 	public void testDepositar100()
 	{
 		CuentaBancaria c1 = new CuentaBancaria();
-		c1.depositar();
-		Assert.assertEquals(100, c1.getSaldo());
+		c1.depositar(100);
+		Assert.assertEquals(100, (int)c1.getSaldo());
 	}
 
 }
