@@ -14,5 +14,13 @@ public class CuentaTest {
 		c1.depositar(100);
 		Assert.assertEquals(100, (int)c1.getSaldo());
 	}
+	
+	@Test
+	public void testExtraer100()
+	{
+		CuentaBancaria c1 = new CuentaBancaria();
+		c1.extraer(100);
+		Assert.assertEquals(0, (int)c1.getSaldo());
+	}
 
 }
