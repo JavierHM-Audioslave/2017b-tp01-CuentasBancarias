@@ -30,5 +30,13 @@ public class CuentaTest {
 		c1.depositar(1000001);
 		Assert.assertFalse(c1.extraer(1000000));		
 	}
+	
+	@Test
+	public void testExtraer1000001() // Aún teniendo suficiente saldo, en una misma operacion no se puede extraer $1000001.
+	{
+		CuentaBancaria c1 = new CuentaBancaria();
+		c1.depositar(1000002);
+		Assert.assertFalse(c1.extraer(1000001));		
+	}
 
 }
