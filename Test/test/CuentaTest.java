@@ -46,5 +46,14 @@ public class CuentaTest {
 		c1.depositar(1000003);
 		Assert.assertFalse(c1.extraer(1000002));		
 	}
+	
+	@Test
+	public void testTransferir$100AOtraCuentaDesdeUnaCuentaVacia()
+	{
+		CuentaBancaria c1 = new CuentaBancaria();
+		CuentaBancaria c2 = new CuentaBancaria();
+		c1.transferirMontoHacia(100, c2);
+		Assert.assertEquals(0, (int)c2.getSaldo());
+	}
 
 }

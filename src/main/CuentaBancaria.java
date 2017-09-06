@@ -23,4 +23,10 @@ public class CuentaBancaria {
 		}
 		return false;
 	}
+	
+	public void transferirMontoHacia(Integer monto, CuentaBancaria c2)
+	{
+		saldo -= monto;
+		c2.depositar(monto);		
+	}
 }
