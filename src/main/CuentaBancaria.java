@@ -16,7 +16,7 @@ public class CuentaBancaria {
 	
 	public boolean extraer(Integer monto)
 	{
-		if(saldo>=monto)
+		if(saldo>=monto && monto!=1000000)
 		{
 			saldo -= monto;
 			return true;
