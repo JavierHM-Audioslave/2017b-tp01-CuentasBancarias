@@ -7,5 +7,5 @@
 
 ## Estudiantes
 
-* Monardo, Javier Hernán ([JavierHM-Audioslave](https://github.com/JavierHM-Audioslave))
-* Reynoso, Thomas ([ThomiReynoso](https://github.com/ThomiReynoso))
+* XXX ([xxx](https://github.com/xxx))
+* XXX ([xxx](https://github.com/xxx))
