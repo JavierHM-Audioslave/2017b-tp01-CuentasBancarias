@@ -14,10 +14,13 @@ public class CuentaBancaria {
 		return saldo;
 	}
 	
-	public void extraer(Integer monto)
+	public boolean extraer(Integer monto)
 	{
-		saldo -= monto;
+		if(saldo>=monto)
+		{
+			saldo -= monto;
+			return true;
+		}
+		return false;
 	}
-	
-
 }
